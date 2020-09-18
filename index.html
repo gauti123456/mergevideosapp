@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Merge Videos Web App in Node and Express</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+      <div class="container">
+          <br><br>
+          <h1 class="text-center">
+              Merge Videos
+          </h1>
+          <br>
+          <form action="/merge" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="files" multiple required class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-danger btn-block">
+                    Merge Videos
+                </button>
+            </div>
+        </form>
+      </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
